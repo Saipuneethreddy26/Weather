@@ -1,0 +1,121 @@
+body{
+  background-image: url(th.jpeg);
+  min-height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+.input{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image:url(weather.jpeg);
+    background-size: none;
+    background-size: cover;
+  height: 25%;
+  width: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+input{
+    flex: 1;
+    margin: 5px;
+    padding: 8px;
+    width: 30%;
+    border-radius: 10px;
+    background-color:honeydew;
+}
+button{
+    padding: 8px; 
+   
+    min-height: fit-content;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.p{
+    display: none;
+    position: absolute;
+   
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40%;
+    width: 45%;
+    margin: auto;
+    
+
+    background-color: rgb(212, 157, 239);    
+}
+p{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.city{
+    text-align: center;
+}
+span{
+    color: blue;
+}
+h3{
+    width: 100%;
+}
+.menuimage{
+    height: 50px;
+    width: 50px;
+    border-radius: 75%;
+}
+.menu{
+    display: none;
+}.m1{
+    display: block;
+}
+h4{
+    display: none;
+}
+@media(max-width:700px) {
+    .p{
+min-width: 70%;
+min-height: 40%;
+    }
+    p{
+        width: 10%;
+    }
+    .input{
+       min-width: 70%;
+    }
+}
+@media(max-width:450px) {
+    h4{
+        display: block;
+    }
+    button{
+        padding: 5px;
+    }
+    
+    input::placeholder{
+        visibility: hidden;
+    }
+    .p{
+        width:80%;
+        height:45% ;
+    }
+    .input{
+        display:flex;
+        flex-direction: column;
+    }
+    input{
+
+       flex: 0;
+       width: 65%;
+    }
+   
+
+    
+}
